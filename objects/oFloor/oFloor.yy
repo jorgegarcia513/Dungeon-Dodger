@@ -2,7 +2,7 @@
     "id": "2dbc4e9a-53ae-44e3-a2cb-e6ef923fba8f",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oWall",
+    "name": "oFloor",
     "eventList": [
         {
             "id": "23e672b8-b73c-4406-b800-5c7ac58d4c01",

@@ -571,6 +571,25 @@
             }
         },
         {
+            "Key": "1709d4a3-b1d6-4ce4-8d51-5d420649c1a0",
+            "Value": {
+                "id": "982ed944-e831-43da-bbe7-8c05a46ce6de",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/oPlayerStats\/oPlayerStats.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "172db3ec-c9e4-47f0-b362-89389711c69a",
             "Value": {
                 "id": "c9c41ecc-aba1-402b-9caa-2ab0c920d793",
@@ -1307,7 +1326,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "objects\/oWall\/oWall.yy",
+                "resourcePath": "objects\/oFloor\/oFloor.yy",
                 "resourceType": "GMObject"
             }
         },

@@ -1,16 +1,21 @@
 /// @description Insert description here
 anim_speed = 2;
+attack_cooldown -= 1;
 switch (state) {
-	case "ATTACK_SWORD_START": {
+	// 
+	case "ATTACK_START": {
 		image_speed = 0;
 		vx = 0;
 		vy = 0;
 		timer = 15;
 		sprite_index = sPlayerAttackSide;
-		state = "SWORD_ATTACK";
+		attack_cooldown = 35;
+		state = "FIRE_ATTACK";
 		break;
 	}
-	case "SWORD_ATTACK": {
+	// Using it a timer, this goes through the animation of a fire attack. Once the animation
+	// is over, it creates a fire object.
+	case "FIRE_ATTACK": {
 		if (timer == 8) {
 			instance_create_layer(x, y, "Objects", oFire);
 		}
@@ -31,6 +36,8 @@ switch (state) {
 		
 		break;
 	}
+	// Moverment Cases: Set sprite to proper one corresponding with direction they are facing.
+	// Adjusts speed to represent which direction they are moving.
 	case "UP": {
 		facing = 0;
 		image_speed = anim_speed;
@@ -91,11 +98,20 @@ switch (state) {
 		
 		break;
 	}
+	// Changes sprite to the falling sprite, and sets state to "GAME OVER"
 	case "FALLING": {
 		sprite_index = sPlayerFalling;
 		vx = 0;
 		vy = 0;
-		state = "GAME_OVER";
+		if(image_yscale <= 0) {
+			gameover = true;
+			break;
+		} else {
+			image_xscale -= 0.01;
+			image_yscale -= 0.01;
+			image_angle -= 5;
+		}
+		break;
 	}
 	case "GAME OVER": {
 		gameover = true;
@@ -103,9 +119,11 @@ switch (state) {
 	}
 }
 
-if (!place_meeting(oPlayer.x + vx, oPlayer.y, oWall)) {
-	state = "FALLING";
+if(attack_cooldown <= 0 && magic < max_magic) {
+	magic += 0.1;
 }
 
+check_collisions();
+// Controls player movement.
 x += vx;
 y += vy;
