@@ -1084,6 +1084,25 @@
             }
         },
         {
+            "Key": "2617da19-a543-4777-997c-a5caf1ed43e2",
+            "Value": {
+                "id": "d9c016fc-31bf-492c-bde1-6387d5ea9629",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "views\/2617da19-a543-4777-997c-a5caf1ed43e2.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "268c0b14-ee09-4671-a83c-49c50edcc753",
             "Value": {
                 "id": "1942c4a3-c2e6-40da-adca-f72ab62c5058",
@@ -1537,6 +1556,25 @@
                 ],
                 "resourcePath": "datafiles_yy\/0x72_DungeonTileset_v1.1_individual_sprites\/skull.png.yy",
                 "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "38ca00cc-a161-45db-8b50-e3ab2bb8f4bb",
+            "Value": {
+                "id": "6913616e-ea3f-4834-93ef-a1789f67f040",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/oNecromancer\/oNecromancer.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -2775,6 +2813,25 @@
             }
         },
         {
+            "Key": "6f41b794-250a-4ad1-9a25-2cc861e0e028",
+            "Value": {
+                "id": "663200ec-282a-4ec8-8bb4-ceb04149cef6",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sHurtNecro\/sHurtNecro.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6fa47b6b-e5ba-42f8-a883-e7421becfbcd",
             "Value": {
                 "id": "d1627ae7-9dd9-45b2-a328-83d678545876",
@@ -3972,6 +4029,25 @@
             }
         },
         {
+            "Key": "9a45fb2d-ca9f-4b24-af14-3c9dafb7b18e",
+            "Value": {
+                "id": "04bfa0ba-cc4a-4e46-89e1-1dbc23f6570b",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sNecromancer\/sNecromancer.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "9af68726-e250-4838-bf1c-91677a9e2aee",
             "Value": {
                 "id": "98cd3db5-659c-458a-986f-a6e6c8d8d3a0",
@@ -4387,6 +4463,25 @@
                 ],
                 "resourcePath": "datafiles_yy\/0x72_DungeonTileset_v1.1_individual_sprites\/wall_fountain_mid_red_anim_f1.png.yy",
                 "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "a8f8c1ae-7bd6-4c51-a9f4-a965e9d2d617",
+            "Value": {
+                "id": "995e697f-3f18-4a90-9571-ea171de765db",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "views\/a8f8c1ae-7bd6-4c51-a9f4-a965e9d2d617.yy",
+                "resourceType": "GMFolder"
             }
         },
         {

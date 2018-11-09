@@ -2,6 +2,7 @@ image_yscale = 1;
 image_xscale = 1;
 speed = 5;
 explosion_timer = 10;
+dmg = 10;
 if (oPlayer.facing == 0) {
 	direction = 90;
 	image_angle = direction - 90;
