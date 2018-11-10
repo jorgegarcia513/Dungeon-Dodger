@@ -99,6 +99,7 @@ switch (state) {
 		break;
 	}
 	// Changes sprite to the falling sprite, and sets state to "GAME OVER"
+	// Player sprite then rotates and shrinks until it disappears.
 	case "FALLING": {
 		sprite_index = sPlayerFalling;
 		vx = 0;
@@ -119,11 +120,14 @@ switch (state) {
 	}
 }
 
+// Controls player's "mana" bar, if they have not recently used an attack it will regenerate
 if(attack_cooldown <= 0 && magic < max_magic) {
 	magic += 0.1;
 }
 
+// Checks for collisions with the world
 check_collisions();
+
 // Controls player movement.
 x += vx;
 y += vy;

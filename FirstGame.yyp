@@ -2832,6 +2832,25 @@
             }
         },
         {
+            "Key": "6f934426-81b2-4989-a50b-735a480150ea",
+            "Value": {
+                "id": "aeff171c-045d-4405-b1a8-0d33f097439b",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sDyingNecro\/sDyingNecro.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6fa47b6b-e5ba-42f8-a883-e7421becfbcd",
             "Value": {
                 "id": "d1627ae7-9dd9-45b2-a328-83d678545876",

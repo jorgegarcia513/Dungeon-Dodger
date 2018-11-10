@@ -1,15 +1,48 @@
-/// @description Insert description here
-// You can write your code in this editor
-var dir = point_direction(x, y, oPlayer.x, oPlayer.y);
-vx = lengthdir_x(enemy_speed, dir);
-vy = lengthdir_y(enemy_speed, dir);
-x += vx;
-y += vy;
+/// @description OnTick events for the Necromancer objext
 
-sprite_index = sNecromancer;
+switch (state) {
+	// Normal state for the sprite, constantly moving
+	case "NORMAL": {
+		sprite_index = sNecromancer;
+		var dir = point_direction(x, y, oPlayer.x, oPlayer.y);
+		vx = lengthdir_x(enemy_speed, dir);
+		vy = lengthdir_y(enemy_speed, dir);
+		x += vx;
+		y += vy;
+		break;
+	}
+	// Sprite hurt animation
+	case "HURT": {
+		vx = 0;
+		vy = 0;
+		sprite_index = sHurtNecro;
+		if(!(anim_timer > 0)) {
+			state = "NORMAL";
+			anim_timer = 5;
+			break;
+		}
+		anim_timer -= 1;
+		break;
+	}
+	// Stop object from moving, shrinks for a set amount of time, then destroys the object
+	case "DEATH": {
+		vx = 0;
+		vy = 0;
+		sprite_index = sDyingNecro
+		if(!(death_anim_timer > 0)) {
+			instance_destroy();
+			break;
+		}
+		image_xscale -= 0.025;
+		image_yscale -= 0.025;
+		death_anim_timer -= 1;
+		break;
+	}
+}
 
+// If this objects hp drops below zero then it will be put into the "DEATH" state
 if(hp <= 0) {
-	instance_destroy();
+	state = "DEATH"
 }
 
 check_collisions();
