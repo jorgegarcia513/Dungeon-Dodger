@@ -125,6 +125,11 @@ if(attack_cooldown <= 0 && magic < max_magic) {
 	magic += 0.1;
 }
 
+if(mouse_check_button(mb_left) && magic > 0) {
+	instance_create_layer(x, y, "Objects", oFire);
+	magic -= 5;
+}
+
 // Checks for collisions with the world
 check_collisions();
 
